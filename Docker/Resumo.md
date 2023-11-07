@@ -23,3 +23,12 @@ docker build -t nomeImage .
  **Docekr Bind** - Forma mais antiga de armazenar conteúdo. Mais limitado, faz um link entre o local e o container, criando o caminho ansoluto dele, enquanto o volume cria um novo diretório no caminho de armazenamento do Docker\
  **Tmpfs** - Armazenamento temporário para recursos como dados sensíveis. Só eiste enquanto o container estiver ativo
 
+## Redes de containers
+
+O Docker possui um enderçamento de IP pŕoprio e, portanto, possui uma rede que pode se comunicar entre si, sem rpecisar ser exposta para a internet. É possível criar redes próprias tbm, caso necessário.
+
+**Tipos de redes**
+
+*Bridge:* plugin default de rede. Cria a comunicação entre os containers de forma que eles possam se comunciar dentro de ecossistemas isolados. Cria resolução DNS, em que se pode dar nomes aos containers e conecar usando esses nomes\
+*Host:* usa a rede do host e a compartilha. O que fo r válido como rede para a máquina em que o Docer está rodando, será válido para o container tbm.\
+*Overlay:* qdo se tem host distribuídos, utiliza-se o formato overlay, que permtie a comunicação segura entre diversos componentes, como serviços em máquinas diferentes
