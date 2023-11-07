@@ -15,11 +15,11 @@ def example_cash_machine():
         if withdraw > balance:
             print('Valor de saldo insuficiente')
         else: print('Saque realizado com com sucesso!')
-    if value == 2:
+    elif value == 2:
         print(f"Seu saldo é R$ {balance}")
-    if value == 3:
+    elif value == 3:
         print("Carregando extrato atualizado. Aguarde..")
-    if value > 3 or value < 1:
+    else:
         print("Número inválido. Digite uma opção válida")
         (example_cash_machine())
     
