@@ -18,3 +18,8 @@ Imutabilidade - o conteúdo da imagem docker deve ser o mesmo, para que, o proje
 no mesmo nível do arquivo dockerfile:
 docker build -t nomeImage .
 
+## Volumes
+ **Docker volume** - monta o diretório dentro do container\
+ **Docekr Bind** - Forma mais antiga de armazenar conteúdo. Mais limitado, faz um link entre o local e o container, criando o caminho ansoluto dele, enquanto o volume cria um novo diretório no caminho de armazenamento do Docker\
+ **Tmpfs** - Armazenamento temporário para recursos como dados sensíveis. Só eiste enquanto o container estiver ativo
+
