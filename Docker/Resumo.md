@@ -11,5 +11,10 @@ RUN - Roda comando em tempo de execução\
 CMD - Roda comando após o início do container, permitindo que o processo seja prioritáio(caso seja usada a instrução ENTRYPOINT, a prioridade será dele e CMD será usado como argumento)\
 LABEL - versão da aplicação
 
+## Imagens
 
+Imutabilidade - o conteúdo da imagem docker deve ser o mesmo, para que, o projeto rode em qqr máquina, independendo do SO.
+
+no mesmo nível do arquivo dockerfile:
+docker build -t nomeImage .
 
