@@ -32,3 +32,10 @@ O Docker possui um enderçamento de IP pŕoprio e, portanto, possui uma rede que
 *Bridge:* plugin default de rede. Cria a comunicação entre os containers de forma que eles possam se comunciar dentro de ecossistemas isolados. Cria resolução DNS, em que se pode dar nomes aos containers e conecar usando esses nomes\
 *Host:* usa a rede do host e a compartilha. O que fo r válido como rede para a máquina em que o Docer está rodando, será válido para o container tbm.\
 *Overlay:* qdo se tem host distribuídos, utiliza-se o formato overlay, que permtie a comunicação segura entre diversos componentes, como serviços em máquinas diferentes
+
+## Docker compose 
+auxilia a criar stacks completas, utilizando componentes do Docker como imagens, variáveis de ambiente, protas, etc..
+
+## Orquestradores 
+Ajudam a usar containers de forma prática e efetiva, garantindo controle, estado e saúde das apps, mesmo que haja centenas de containers; permite o uso de health checks, segmentação de apps em contextos, armazenamento de dados sensíveis, etc..
+O mais famoso é o Kubernetes.
